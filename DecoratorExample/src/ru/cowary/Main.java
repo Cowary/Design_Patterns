@@ -3,7 +3,7 @@ package ru.cowary;
 public class Main {
 
     public static void main(String[] args) {
-	    Network network = new Network();
+        Network network = new Network();
 	    Messenger messenger;
 
 	    System.out.println("Текстовый мессенджер");

@@ -13,6 +13,7 @@ public class TextMessanger implements Messanger {
 
     @Override
     public void inputMessage() {
+        System.out.println("Введите сообщение");
         message = scanner.nextLine();
     }
 

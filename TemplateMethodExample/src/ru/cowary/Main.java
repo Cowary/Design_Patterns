@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) {
-        Messenger messenger;
+    public static void main(String[] args)  {
+        Messenger messenger = null;
 	    System.out.println("Выберите тип отправляемого сообщение: \n" + "1 - Текстовое сообщение\n" +"2 - Файл");
         Scanner scanner = new Scanner(System.in);
         if(scanner.nextLine().equals("1") ){
             messenger = new TextMessager();
-        }else {
+        }else if(scanner.nextLine().equals("2")) {
             messenger = new FileMessenger();
         }
         messenger.inputAddressName();
