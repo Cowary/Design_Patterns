@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e77e1cfc-a530-4654-aa27-0478578305c2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../SingletonExample/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SingletonExample/out/production/SingletonExample/META-INF/SingletonExample.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SingletonExample/out/production/SingletonExample/ru/cowary/SingletonSQLConnection.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SingletonExample/src/ru/cowary/SingletonSQLConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SingletonExample/out/production/SingletonExample/ru/cowary/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SingletonExample/out/production/SingletonExample/ru/cowary/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SingletonExample/out/production/SingletonExample/ru/cowary/Singleton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SingletonExample/src/ru/cowary/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SingletonExample/src/ru/cowary/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SingletonExample/src/ru/cowary/Singleton.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ru/cowary/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/cowary/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Visitor/src/ru/cowary/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Visitor/src/ru/cowary/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +33,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PatternStrategyExample" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FlyweightExample" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -76,6 +82,7 @@
       <workItem from="1573539505012" duration="34000" />
       <workItem from="1573539617099" duration="79000" />
       <workItem from="1573566059294" duration="1414000" />
+      <workItem from="1575992825801" duration="685000" />
     </task>
     <servers />
   </component>

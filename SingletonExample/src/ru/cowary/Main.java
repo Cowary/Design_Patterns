@@ -4,8 +4,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Singleton singleton_1 = Singleton.getInstance();
+        SingletonSQLConnection singleton_SQLConnection_1 = SingletonSQLConnection.getInstance();
 
-        Singleton singleton_2 = Singleton.getInstance();
+        SingletonSQLConnection singleton_SQLConnection_2 = SingletonSQLConnection.getInstance();
     }
 }
