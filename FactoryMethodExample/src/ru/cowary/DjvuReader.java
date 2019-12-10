@@ -1,8 +1,13 @@
 package ru.cowary;
 
-public class DjvuReader implements Reader {
+public class DjvuReader extends Reader {
     @Override
-    public String read() {
-        return "Чтение файла формата djvu";
+    public void read() {
+        System.out.println("Чтение файла формата djvu");
+    }
+
+    @Override
+    public Printer createPrinter() {
+        return new DjvuPrinter();
     }
 }

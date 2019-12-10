@@ -1,5 +1,5 @@
 package ru.cowary;
 
 public interface Reader {
-    public String read();
+    public void read();
 }

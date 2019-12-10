@@ -3,13 +3,26 @@ package ru.cowary;
 public class Main {
 
     public static void main(String[] args) {
-	    ReaderFactory readerFactory = new ReaderFactory();
 	    Reader reader;
-	    reader = readerFactory.getReader("word");
-	    System.out.println(reader.read());
-	    reader = readerFactory.getReader("PDF");
-		System.out.println(reader.read());
-	    reader = readerFactory.getReader("djvu");
-		System.out.println(reader.read());
+	    reader = getReader("word");
+	    reader.read();
+	    reader.print();
+	    reader = getReader("PDF");
+		reader.read();
+		reader.print();
+	    reader = getReader("djvu");
+		reader.read();
+		reader.print();
     }
+
+	public static Reader getReader(String nameReader){
+		if(nameReader.toLowerCase().equals("djvu")){
+			return new DjvuReader();
+		}else if(nameReader.toLowerCase().equals("pdf")){
+			return new PdfReader();
+		}else if(nameReader.toLowerCase().equals("word")){
+			return new WordReader();
+		}
+		return null;
+	}
 }

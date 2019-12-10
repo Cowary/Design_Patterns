@@ -4,25 +4,32 @@ public class Main {
 
     public static void main(String[] args) {
 	    AbstractFactory factory;
-	    Reader reader;
-	    Printer printer;
-	    factory = FactoryProducer.getFactory("Word");
-	    reader = factory.createReader();
-	    printer = factory.createPrinter();
-	    System.out.println(reader.read());
-	    System.out.println(printer.print());
+        DocumentManager documentManager;
 
-        factory = FactoryProducer.getFactory("PDF");
-        reader = factory.createReader();
-        printer = factory.createPrinter();
-        System.out.println(reader.read());
-        System.out.println(printer.print());
+	    factory = getFactory("Word");
+	    documentManager = new DocumentManager(factory);
+        documentManager.read();
+        documentManager.print();
 
-        factory = FactoryProducer.getFactory("Djvu");
-        reader = factory.createReader();
-        printer = factory.createPrinter();
-        System.out.println(reader.read());
-        System.out.println(printer.print());
+        factory = getFactory("PDF");
+        documentManager = new DocumentManager(factory);
+        documentManager.read();
+        documentManager.print();
 
+        factory = getFactory("Djvu");
+        documentManager = new DocumentManager(factory);
+        documentManager.read();
+        documentManager.print();
+
+    }
+    public static AbstractFactory getFactory(String type){
+        if(type.toLowerCase().equals("djvu")){
+            return new DjvuFactory();
+        }else if(type.toLowerCase().equals("pdf")){
+            return new PdfFactory();
+        }else if(type.toLowerCase().equals("word")){
+            return new WordFactory();
+        }
+        return null;
     }
 }
